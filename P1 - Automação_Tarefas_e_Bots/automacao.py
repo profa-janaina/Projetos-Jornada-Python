@@ -37,26 +37,26 @@ tabela = pd.read_csv(caminho)
 
 
 #Cadastro produto
-# for linha in tabela.index:
-#     pyautogui.click(x=411, y=257)
-#     print(tabela.loc[linha, "codigo"])
-#     pyautogui.write(str(tabela.loc[linha, "codigo"]))
-#     pyautogui.press("tab")
-#     pyautogui.write(str(tabela.loc[linha, "marca"]))
-#     pyautogui.press("tab")
-#     pyautogui.write(str(tabela.loc[linha, "tipo"]))
-#     pyautogui.press("tab")
-#     pyautogui.write(str(tabela.loc[linha, "categoria"]))
-#     pyautogui.press("tab")
-#     pyautogui.write(str(tabela.loc[linha, "preco_unitario"]))
-#     pyautogui.press("tab")
-#     pyautogui.write(str(tabela.loc[linha, "custo"]))
-#     pyautogui.press("tab")
-#     obs = str(tabela.loc[linha, "obs"])
-#     if obs != "nan":
-#         pyautogui.write(obs)
-#     pyautogui.press("tab")
+for linha in tabela.index:
+    pyautogui.click(x=411, y=257)
+    print(tabela.loc[linha, "codigo"])
+    pyautogui.write(str(tabela.loc[linha, "codigo"]))
+    pyautogui.press("tab")
+    pyautogui.write(str(tabela.loc[linha, "marca"]))
+    pyautogui.press("tab")
+    pyautogui.write(str(tabela.loc[linha, "tipo"]))
+    pyautogui.press("tab")
+    pyautogui.write(str(tabela.loc[linha, "categoria"]))
+    pyautogui.press("tab")
+    pyautogui.write(str(tabela.loc[linha, "preco_unitario"]))
+    pyautogui.press("tab")
+    pyautogui.write(str(tabela.loc[linha, "custo"]))
+    pyautogui.press("tab")
+    obs = str(tabela.loc[linha, "obs"])
+    if obs != "nan":
+        pyautogui.write(obs)
+    pyautogui.press("tab")
 
-#     pyautogui.press("enter")
+    pyautogui.press("enter")
 
-#     pyautogui.scroll(5000)
+    pyautogui.scroll(5000)
